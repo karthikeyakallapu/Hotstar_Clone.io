@@ -9,7 +9,7 @@ function App() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch(`https://movieapi-kk.onrender.com/movies`)
+    fetch(`https://movie-api-eight-jade.vercel.app/movies`)
       .then((res) => res.json())
       .then((json) => {
         const movies = Object.values(json[0]).map((movie) => {
